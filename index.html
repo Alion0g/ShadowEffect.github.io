@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COOL SHADOW EFFECT</title>
+
+	<style>
+
+		body{
+			background: #000;
+		}
+
+		.box{
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 75px; height: 75px;
+			border-radius: 50%;
+			animation: anim 2s linear infinite;
+		}
+		@keyframes anim{
+			0{
+				box-shadow: 0 0 0 0px #09daed;
+			}
+			20%{
+				box-shadow: 0 0 0 20px #09daed;
+			}
+			40%{
+				box-shadow: 0 0 0 20px #09daed
+								  40px #09daed;
+			}
+			60%{
+				box-shadow: 0 0 0 10px #09daed
+								  50px #09daed
+								  30px #09daed;
+			}
+			80%{
+				box-shadow: 0 0 0 0px #09daed
+								  40px #09daed
+								  60px #09daed
+								  80px #09daed;
+			}
+			100%{
+				box-shadow: 0 0 0 20px #09daed
+								  40px #09daed
+								  60px #09daed
+								  90px #09daed
+								  120px #09daed;
+			}
+		}
+		
+	</style>
+
+</head>
+<body>
+
+	<div class="box">
+		
+	</div>
+
+</body>
+</html>
